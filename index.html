@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>D02</title>
+    <style>
+      /*1- select p elements and make them red*/
+      p {
+        color: red;
+      }
+
+      /*2- select p and div elements */
+      p, div {
+      color: blue;
+      }
+      
+      /*3- select p with class mainClass direct child for div with id myDiv and make it styled*/
+      #myDiv > p.mainClass {
+      color: green;
+      }
+      
+      /*4- select all p inside div and style them*/
+      div p {
+      color: brown;
+      }
+
+      /*5- select input with type text element with class myClass*/
+      input[type="text"].myClass {
+      border: 1px solid peru;
+      }
+
+      /*6- select span elements after div*/
+      div~span {
+      color: purple;
+      }
+
+      /*7- select p with class myClass*/
+      p.myClass {
+      color: gray;
+      }
+
+      /*8- select div with id myDiv*/
+      #myDiv {
+      background-color: lightblue;
+      }
+    </style>
+
+    <script src="day2.js" defer></script>
+
+  </head>
+  <body>
+    <h2 class="myClass">CSS</h2>
+    <p id="myP">
+      Diam labore sadipscing amet nonumy amet sea aliquyam invidunt at, no
+      invidunt elitr at ut takimata erat tempor ipsum eos..
+    </p>
+    <div id="container">
+      <p>this is p</p>
+      <p class="myClass">this is p2</p>
+      <p>this is p3</p>
+      <p>this is p4</p>
+    </div>
+    <p>this is sep</p>
+    <span>this is span after div</span>
+    <span>this is span after div</span>
+    <ul>
+      <li>Coffee</li>
+      <li class="myClass mainClass">Tea</li>
+      <li>Water</li>
+    </ul>
+    <div id="mydiv">
+      dsdsds
+      <p class="mainClass">this is p inside div</p>
+      <div>
+        <p class="mainClass">this is p inside div inside div</p>
+        <p>this is p inside div inside div</p>
+        <p>this is p inside div inside div</p>
+      </div>
+    </div>
+
+    <form>
+      <input type="text" class="myClass" name="fname" />
+      <input type="text" name="age" />
+      <input type="password" name="age" />
+    </form>
+  </body>
+</html>
